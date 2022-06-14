@@ -51,21 +51,30 @@ namespace ShopListPr1
             ListaController listaController = new ListaController();
             bool verifica = listaController.salvarLista(lista);
 
-            if (verifica == true)
+
+            if (!VereficaQuantidade(Convert.ToInt32(txtQuantidade.Text)))
             {
-                MessageBox.Show("Produto cadastrado com sucesso.", "Cadastro do produto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                if (MessageBox.Show("Deseja continuar cadastrando o seu Produto?", "Cadastro do produto", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    LimpaCampos();
-                }
-                else
-                {
-                    Close();
-                }
+                MessageBox.Show("Não é possivel cadastrar produtos negativo.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             else
             {
-                MessageBox.Show("Falha ao cadastrar o Produto.", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (verifica == true)
+                {
+                    MessageBox.Show("Produto cadastrado com sucesso.", "Cadastro do produto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (MessageBox.Show("Deseja continuar cadastrando o seu Produto?", "Cadastro do produto", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        LimpaCampos();
+                    }
+                    else
+                    {
+                        Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Falha ao cadastrar o Produto.", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -99,6 +108,15 @@ namespace ShopListPr1
             {
                 this.Dispose();
             }
+        }
+
+        private bool VereficaQuantidade(int Quantidade)
+        {
+            if (Quantidade <= 0)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
