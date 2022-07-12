@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace ShopListPr1
 {
     public partial class frmConsultaLista : Form
-    {
+    {        
         ListaController listaController = new ListaController();
         public frmConsultaLista()
         {
@@ -36,14 +36,15 @@ namespace ShopListPr1
         {
             if (MessageBox.Show("Deseja excluir o Produto selecionado?", "Excluir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                Lista list = new Lista();
-                list.idproduto = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[0].Value);
-                bool resultado = listaController.deletarProduto(list);
+                Lista lista = new Lista();
+                lista.email = Properties.Settings.Default.email;
+                lista.idproduto = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[0].Value);
+                bool resultado = listaController.deletarProduto(lista);
 
                 if (resultado)
                 {
                     MessageBox.Show("Produto Excluido com Sucesso", "Excluido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dgvLista.DataSource = listaController.exibirProdutos();
+                    dgvLista.DataSource = listaController.exibirProdutos(lista);
                     dgvLista.Refresh();
                 }
                 else
@@ -57,13 +58,12 @@ namespace ShopListPr1
         private Lista produtoSelecionado()
         {
             Lista list = new Lista();
-
             list.idproduto = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[0].Value);
             list.email = dgvLista.SelectedRows[0].Cells[1].Value.ToString();
             list.produto = dgvLista.SelectedRows[0].Cells[2].Value.ToString();
-            list.preco = dgvLista.SelectedRows[0].Cells[3].Value.ToString();
-            list.quantidade = dgvLista.SelectedRows[0].Cells[4].Value.ToString();
-            list.total = (dgvLista.SelectedRows[0].Cells[5].Value.ToString());
+            list.preco = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[3].Value.ToString());
+            list.quantidade = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[4].Value.ToString());
+            list.total = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[5].Value.ToString());
             
             return list;
 
@@ -73,7 +73,9 @@ namespace ShopListPr1
 
         private void frmConsultaLista_Load(object sender, EventArgs e)
         {
-            dgvLista.DataSource = listaController.exibirProdutos();
+            Lista lista = new Lista();
+            lista.email = Properties.Settings.Default.email;
+            dgvLista.DataSource = listaController.exibirProdutos(lista);
 
             
             dgvLista.Columns[0].Width = 50;
@@ -102,12 +104,14 @@ namespace ShopListPr1
 
         private void btnEditar_Click_1(object sender, EventArgs e)
         {
-            frmCadastroProduto lista = new frmCadastroProduto(produtoSelecionado());
-            lista.ShowDialog();
+            Lista lista = new Lista();
+            lista.email = Properties.Settings.Default.email;
+            frmCadastroProduto cadastroProduto = new frmCadastroProduto(produtoSelecionado());
+            cadastroProduto.ShowDialog();
             dgvLista.BeginInvoke((MethodInvoker)delegate ()
             {
                 txtFiltro.Clear();
-                dgvLista.DataSource = listaController.exibirProdutos();
+                dgvLista.DataSource = listaController.exibirProdutos(lista);
                 dgvLista.Refresh();
             });
         }

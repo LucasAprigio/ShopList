@@ -46,7 +46,7 @@ namespace ShopListPr1.Controllers
                 conexao.Close();
             }
         }
-        public DataTable exibirProdutos()
+        public DataTable exibirProdutos(Lista lista)
         {
             DataTable dt = new DataTable();
            
@@ -54,7 +54,8 @@ namespace ShopListPr1.Controllers
             {
                 conexao.Open();
 
-                MySqlCommand cmd = new MySqlCommand("SELECT idproduto,email,produto,preco,quantidade,total FROM lista", conexao);
+                MySqlCommand cmd = new MySqlCommand("SELECT idproduto,email,produto,preco,quantidade,total FROM lista WHERE email = @email", conexao);
+                cmd.Parameters.AddWithValue("@email",lista.email);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 dt.Load(reader);
                 return dt;

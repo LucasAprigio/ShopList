@@ -31,7 +31,7 @@ namespace ShopListPr1
             carregarEditar();
         }
 
-        public void carregarEditar()
+        private void carregarEditar()
         {
             btnCadastrar.Visible = false;
             btnLimpar.Visible = false;
@@ -39,9 +39,9 @@ namespace ShopListPr1
 
             txtEmail.Text = lista.email;
             txtProduto.Text = lista.produto;
-            txtQuantidade.Text = lista.quantidade;
-            txtPreco.Text = lista.preco;
-            txtTotal.Text = lista.total;
+            Convert.ToInt32(txtQuantidade.Text = lista.quantidade.ToString());
+            Convert.ToDouble(txtPreco.Text = lista.preco.ToString());
+            Convert.ToDouble(txtTotal.Text = lista.total.ToString());
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -62,10 +62,9 @@ namespace ShopListPr1
             Lista lista = new Lista(
                     Properties.Settings.Default.email,
                     txtProduto.Text,
-                    txtPreco.Text,
-                    txtQuantidade.Text,
-                    total.ToString()
-                );
+                    Convert.ToDouble(txtPreco.Text.ToString()),
+                    Convert.ToInt32(txtQuantidade.Text.ToString()),
+                    Convert.ToDouble(total.ToString()));
 
 
             txtTotal.Text = total.ToString();
@@ -150,9 +149,9 @@ namespace ShopListPr1
         {
             lista.email = txtEmail.Text;
             lista.produto = txtProduto.Text;
-            lista.quantidade = txtQuantidade.Text;
-            lista.preco = txtPreco.Text;
-            lista.total = txtTotal.Text;
+            lista.quantidade = Convert.ToInt32(txtQuantidade.Text.ToString());
+            lista.preco = Convert.ToDouble(txtPreco.Text.ToString());
+            lista.total = Convert.ToDouble(txtTotal.Text.ToString());
 
 
             ListaController listaController = new ListaController();

@@ -39,7 +39,7 @@ namespace ShopListPr1
 
         private void listaDeComprasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCadastroProduto cadastroProduto = new frmCadastroProduto(new Lista());
+            frmCadastroProduto cadastroProduto = new frmCadastroProduto();
             cadastroProduto.ShowDialog();
             
         }
