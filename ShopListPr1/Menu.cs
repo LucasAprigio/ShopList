@@ -81,5 +81,17 @@ namespace ShopListPr1
         {
 
         }
+
+        private void relatorioListaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRelatorioLista relatorioLista = new frmRelatorioLista();
+            relatorioLista.ShowDialog();    
+        }
+
+        private void consultaListaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaLista consultaLista = new frmConsultaLista();
+            consultaLista.ShowDialog();
+        }
     }
 }

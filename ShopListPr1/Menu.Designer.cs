@@ -33,6 +33,7 @@ namespace ShopListPr1
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDeComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatorioListaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.logOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +44,7 @@ namespace ShopListPr1
             this.usuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.consultaListaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +66,8 @@ namespace ShopListPr1
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroDeUsuáriosToolStripMenuItem,
             this.listaDeComprasToolStripMenuItem,
+            this.consultaListaToolStripMenuItem,
+            this.relatorioListaToolStripMenuItem,
             this.toolStripMenuItem1,
             this.logOffToolStripMenuItem,
             this.sairToolStripMenuItem});
@@ -85,6 +89,13 @@ namespace ShopListPr1
             this.listaDeComprasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.listaDeComprasToolStripMenuItem.Text = "Lista de Compras";
             this.listaDeComprasToolStripMenuItem.Click += new System.EventHandler(this.listaDeComprasToolStripMenuItem_Click);
+            // 
+            // relatorioListaToolStripMenuItem
+            // 
+            this.relatorioListaToolStripMenuItem.Name = "relatorioListaToolStripMenuItem";
+            this.relatorioListaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.relatorioListaToolStripMenuItem.Text = "Relatorio Lista";
+            this.relatorioListaToolStripMenuItem.Click += new System.EventHandler(this.relatorioListaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -175,6 +186,13 @@ namespace ShopListPr1
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // consultaListaToolStripMenuItem
+            // 
+            this.consultaListaToolStripMenuItem.Name = "consultaListaToolStripMenuItem";
+            this.consultaListaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.consultaListaToolStripMenuItem.Text = "Consulta Lista";
+            this.consultaListaToolStripMenuItem.Click += new System.EventHandler(this.consultaListaToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,5 +238,7 @@ namespace ShopListPr1
         private System.Windows.Forms.ToolStripStatusLabel usuarioLogado;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem relatorioListaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaListaToolStripMenuItem;
     }
 }
