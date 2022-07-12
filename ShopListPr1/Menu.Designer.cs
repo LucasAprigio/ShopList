@@ -41,12 +41,16 @@ namespace ShopListPr1
             this.Conectado = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.usuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -105,15 +109,17 @@ namespace ShopListPr1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(158, 119);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(313, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(475, 31);
+            this.label1.Size = new System.Drawing.Size(153, 33);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Faça a sua melhor lista de compras";
+            this.label1.Text = "Faça Aqui ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Conectado,
             this.toolStripStatusLabel2,
@@ -126,12 +132,14 @@ namespace ShopListPr1
             // 
             // Conectado
             // 
+            this.Conectado.BackColor = System.Drawing.SystemColors.Control;
             this.Conectado.Name = "Conectado";
             this.Conectado.Size = new System.Drawing.Size(65, 17);
             this.Conectado.Text = "Conectado";
             // 
             // toolStripStatusLabel2
             // 
+            this.toolStripStatusLabel2.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(10, 17);
             this.toolStripStatusLabel2.Text = "|";
@@ -139,17 +147,42 @@ namespace ShopListPr1
             // 
             // usuarioLogado
             // 
+            this.usuarioLogado.BackColor = System.Drawing.SystemColors.ControlDark;
             this.usuarioLogado.Name = "usuarioLogado";
             this.usuarioLogado.Size = new System.Drawing.Size(86, 17);
             this.usuarioLogado.Text = "usuarioLogado";
             this.usuarioLogado.Click += new System.EventHandler(this.toolStripStatusLabel3_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(215, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(375, 33);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "A melhor lista de compras ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ShopListPr1.Properties.Resources._5367202ad4dd11725544cb3008049f96_icone_plano_de_carrinho_de_compras;
+            this.pictureBox1.Location = new System.Drawing.Point(164, 150);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(477, 249);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ShopListPr1.Properties.Resources.Gold;
+            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(781, 515);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -165,6 +198,7 @@ namespace ShopListPr1
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +218,7 @@ namespace ShopListPr1
         private System.Windows.Forms.ToolStripStatusLabel Conectado;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel usuarioLogado;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

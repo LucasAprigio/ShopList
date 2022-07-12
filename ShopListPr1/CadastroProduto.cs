@@ -14,25 +14,47 @@ namespace ShopListPr1
 {
     public partial class frmCadastroProduto : Form
     {
+       
+        Lista lista = new Lista();
+
         public frmCadastroProduto()
         {
-                InitializeComponent();
-                txtEmail.Text = Properties.Settings.Default.email;
-            
+            InitializeComponent();
+            txtEmail.Text = Properties.Settings.Default.email;
         }
 
+        public frmCadastroProduto(Lista list)
+        {
+            InitializeComponent();
+
+            lista = list;
+            carregarEditar();
+        }
+
+        public void carregarEditar()
+        {
+            btnCadastrar.Visible = false;
+            btnLimpar.Visible = false;
+            btnSalvar.Visible = true;
+
+            txtEmail.Text = lista.email;
+            txtProduto.Text = lista.produto;
+            txtQuantidade.Text = lista.quantidade;
+            txtPreco.Text = lista.preco;
+            txtTotal.Text = lista.total;
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
-
+        
         private void frmCadastroProduto_Load(object sender, EventArgs e)
         {
-           
+
         }
 
-        
-        
+
+
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             double total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
@@ -41,10 +63,10 @@ namespace ShopListPr1
                     Properties.Settings.Default.email,
                     txtProduto.Text,
                     txtPreco.Text,
-                    Convert.ToInt32(txtQuantidade.Text),
+                    txtQuantidade.Text,
                     total.ToString()
                 );
-            
+
 
             txtTotal.Text = total.ToString();
 
@@ -80,7 +102,7 @@ namespace ShopListPr1
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnResetar_Click(object sender, EventArgs e)
@@ -93,8 +115,8 @@ namespace ShopListPr1
             txtProduto.Text = "";
             txtPreco.Text = "";
             txtQuantidade.Text = "";
-            txtTotal.Text = ""; 
-           
+            txtTotal.Text = "";
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -118,5 +140,33 @@ namespace ShopListPr1
             }
             return true;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            lista.email = txtEmail.Text;
+            lista.produto = txtProduto.Text;
+            lista.quantidade = txtQuantidade.Text;
+            lista.preco = txtPreco.Text;
+            lista.total = txtTotal.Text;
+
+
+            ListaController listaController = new ListaController();
+            bool resultado = listaController.editarProduto(lista);
+
+            if (resultado)
+            {
+                MessageBox.Show("Produto atualizado com sucesso", "Atualizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Falha ao atualizar o Produto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
+    
 }

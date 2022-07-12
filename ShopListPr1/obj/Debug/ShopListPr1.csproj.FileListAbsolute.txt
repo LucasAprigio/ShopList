@@ -230,3 +230,41 @@ C:\Users\Lc\Documents\GitHub\ShopList\ShopListPr1\obj\Debug\ShopListPr1.csproj.C
 C:\Users\Lc\Documents\GitHub\ShopList\ShopListPr1\obj\Debug\ShopListPr1.csproj.CopyComplete
 C:\Users\Lc\Documents\GitHub\ShopList\ShopListPr1\obj\Debug\ShopListPr1.exe
 C:\Users\Lc\Documents\GitHub\ShopList\ShopListPr1\obj\Debug\ShopListPr1.pdb
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\ShopListPr1.exe.config
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\ShopListPr1.exe
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\ShopListPr1.pdb
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\Google.Protobuf.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\MySql.Data.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\System.Buffers.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\System.Memory.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\ZstdNet.dll
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\Google.Protobuf.pdb
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\Google.Protobuf.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\MySql.Data.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\System.Buffers.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\System.Memory.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.csproj.AssemblyReference.cache
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.frmCadastroProduto.resources
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.frmCadastroUsuario.resources
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.frmLogin.resources
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.frmMenu.resources
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.Properties.Resources.resources
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.csproj.GenerateResource.cache
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.csproj.CoreCompileInputs.cache
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.csproj.CopyComplete
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.exe
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.pdb
+C:\Users\Lc\Desktop\ti curso\C#\ShopList\ShopListPr1\obj\Debug\ShopListPr1.frmConsultaLista.resources

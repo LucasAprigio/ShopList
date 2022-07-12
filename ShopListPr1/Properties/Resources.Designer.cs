@@ -19,7 +19,7 @@ namespace ShopListPr1.Properties {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,26 @@ namespace ShopListPr1.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5367202ad4dd11725544cb3008049f96_icone_plano_de_carrinho_de_compras {
+            get {
+                object obj = ResourceManager.GetObject("5367202ad4dd11725544cb3008049f96-icone-plano-de-carrinho-de-compras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

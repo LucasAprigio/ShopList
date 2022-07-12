@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Jun-2022 às 03:53
+-- Tempo de geração: 12-Jul-2022 às 07:33
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -43,7 +43,7 @@ CREATE TABLE `lista` (
 --
 
 INSERT INTO `lista` (`idproduto`, `email`, `produto`, `preco`, `quantidade`, `total`) VALUES
-(1, 'admin@admin.com', 'pão', '3', '15', '45'),
+(1, 'admin@admin.com', 'pão francês', '3', '15', '45'),
 (2, 'admin@admin.com', 'leite', '3', '10', '30'),
 (3, 'admin@admin.com', 'nescau', '9', '1', '9'),
 (4, 'admin@admin.com', 'arroz', '13', '4', '52'),
@@ -96,7 +96,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `lista`
 --
 ALTER TABLE `lista`
-  MODIFY `idproduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idproduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`

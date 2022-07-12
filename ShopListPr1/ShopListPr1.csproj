@@ -111,6 +111,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaLista.Designer.cs">
+      <DependentUpon>frmConsultaLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaLista.resx">
+      <DependentUpon>frmConsultaLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -163,6 +172,11 @@
   <ItemGroup>
     <None Include="Resources\Gold.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5367202ad4dd11725544cb3008049f96-icone-plano-de-carrinho-de-compras.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,10 +40,14 @@ namespace ShopListPr1
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnResetar = new System.Windows.Forms.Button();
-            this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnCancelarProduto = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -59,53 +63,52 @@ namespace ShopListPr1
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(103, 12);
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(87, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(357, 177);
+            this.groupBox1.Size = new System.Drawing.Size(511, 207);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Dados do Produto";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtTotal
             // 
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(249, 50);
+            this.txtTotal.Location = new System.Drawing.Point(374, 50);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(100, 29);
+            this.txtTotal.Size = new System.Drawing.Size(100, 30);
             this.txtTotal.TabIndex = 13;
             // 
             // txtQuantidade
             // 
-            this.txtQuantidade.Location = new System.Drawing.Point(224, 122);
+            this.txtQuantidade.Location = new System.Drawing.Point(201, 50);
             this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(100, 29);
+            this.txtQuantidade.Size = new System.Drawing.Size(142, 30);
             this.txtQuantidade.TabIndex = 12;
             // 
             // txtPreco
             // 
-            this.txtPreco.Location = new System.Drawing.Point(130, 50);
+            this.txtPreco.Location = new System.Drawing.Point(10, 122);
             this.txtPreco.Name = "txtPreco";
-            this.txtPreco.Size = new System.Drawing.Size(100, 29);
+            this.txtPreco.Size = new System.Drawing.Size(142, 30);
             this.txtPreco.TabIndex = 11;
             this.txtPreco.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 97);
+            this.label4.Location = new System.Drawing.Point(197, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 22);
+            this.label4.Size = new System.Drawing.Size(55, 23);
             this.label4.TabIndex = 10;
             this.label4.Text = "Email";
             // 
             // txtEmail
             // 
             this.txtEmail.Enabled = false;
-            this.txtEmail.Location = new System.Drawing.Point(10, 122);
+            this.txtEmail.Location = new System.Drawing.Point(201, 136);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(195, 29);
+            this.txtEmail.Size = new System.Drawing.Size(273, 30);
             this.txtEmail.TabIndex = 6;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
@@ -113,78 +116,79 @@ namespace ShopListPr1
             // 
             this.txtProduto.Location = new System.Drawing.Point(10, 50);
             this.txtProduto.Name = "txtProduto";
-            this.txtProduto.Size = new System.Drawing.Size(100, 29);
+            this.txtProduto.Size = new System.Drawing.Size(142, 30);
             this.txtProduto.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(220, 97);
+            this.label5.Location = new System.Drawing.Point(197, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 22);
+            this.label5.Size = new System.Drawing.Size(107, 23);
             this.label5.TabIndex = 4;
             this.label5.Text = "Quantidade";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(245, 25);
+            this.label3.Location = new System.Drawing.Point(370, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 22);
+            this.label3.Size = new System.Drawing.Size(51, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Total";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(126, 25);
+            this.label2.Location = new System.Drawing.Point(6, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 22);
+            this.label2.Size = new System.Drawing.Size(56, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Preço";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 22);
+            this.label1.Size = new System.Drawing.Size(75, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Produto";
             // 
-            // btnResetar
+            // btnLimpar
             // 
-            this.btnResetar.BackColor = System.Drawing.Color.Yellow;
-            this.btnResetar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnResetar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnResetar.FlatAppearance.BorderSize = 0;
-            this.btnResetar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
-            this.btnResetar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
-            this.btnResetar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResetar.Location = new System.Drawing.Point(223, 238);
-            this.btnResetar.Name = "btnResetar";
-            this.btnResetar.Size = new System.Drawing.Size(110, 41);
-            this.btnResetar.TabIndex = 5;
-            this.btnResetar.Text = "Limpar";
-            this.btnResetar.UseVisualStyleBackColor = false;
-            this.btnResetar.Click += new System.EventHandler(this.btnResetar_Click);
+            this.btnLimpar.BackColor = System.Drawing.Color.Yellow;
+            this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLimpar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
+            this.btnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(303, 324);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(110, 41);
+            this.btnLimpar.TabIndex = 5;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnResetar_Click);
             // 
-            // btnEnviar
+            // btnCadastrar
             // 
-            this.btnEnviar.BackColor = System.Drawing.Color.Lime;
-            this.btnEnviar.FlatAppearance.BorderSize = 0;
-            this.btnEnviar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnEnviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnviar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviar.Location = new System.Drawing.Point(72, 238);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(110, 41);
-            this.btnEnviar.TabIndex = 4;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = false;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            this.btnCadastrar.BackColor = System.Drawing.Color.Lime;
+            this.btnCadastrar.FlatAppearance.BorderSize = 0;
+            this.btnCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.Location = new System.Drawing.Point(152, 324);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(110, 41);
+            this.btnCadastrar.TabIndex = 4;
+            this.btnCadastrar.Text = "Enviar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // btnCancelarProduto
             // 
@@ -194,8 +198,8 @@ namespace ShopListPr1
             this.btnCancelarProduto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnCancelarProduto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCancelarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarProduto.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarProduto.Location = new System.Drawing.Point(369, 238);
+            this.btnCancelarProduto.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarProduto.Location = new System.Drawing.Point(449, 324);
             this.btnCancelarProduto.Name = "btnCancelarProduto";
             this.btnCancelarProduto.Size = new System.Drawing.Size(110, 41);
             this.btnCancelarProduto.TabIndex = 6;
@@ -203,15 +207,55 @@ namespace ShopListPr1
             this.btnCancelarProduto.UseVisualStyleBackColor = false;
             this.btnCancelarProduto.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(150, 29);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(397, 42);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Cadastro de Produtos";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.BlueViolet;
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Location = new System.Drawing.Point(-14, -11);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(718, 93);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.Lime;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(152, 324);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(110, 41);
+            this.btnSalvar.TabIndex = 8;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Visible = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
             // frmCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ShopListPr1.Properties.Resources.Gold;
-            this.ClientSize = new System.Drawing.Size(562, 310);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(690, 400);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnCancelarProduto);
-            this.Controls.Add(this.btnResetar);
-            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -221,6 +265,8 @@ namespace ShopListPr1
             this.Load += new System.EventHandler(this.frmCadastroProduto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -238,8 +284,11 @@ namespace ShopListPr1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnResetar;
-        private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnCancelarProduto;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }

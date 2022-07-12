@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ShopListPr1.Models
 {
-    internal class Lista
+    public class Lista
     {
         public int idproduto { get; set; }
         public string email { get; set; }
         public string produto { get; set; }
         public string preco { get; set; }
-        public int quantidade { get; set; }
+        public string quantidade { get; set; }
         public string total { get; set; }
         public Lista()
         {
@@ -22,7 +22,7 @@ namespace ShopListPr1.Models
         public Lista    (string _email,
                         string _produto,
                         string _preco,
-                        int _quantidade,
+                        string _quantidade,
                         string _total)
                                           
         {

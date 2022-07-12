@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopListPr1.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,7 +39,7 @@ namespace ShopListPr1
 
         private void listaDeComprasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCadastroProduto cadastroProduto = new frmCadastroProduto();
+            frmCadastroProduto cadastroProduto = new frmCadastroProduto(new Lista());
             cadastroProduto.ShowDialog();
             
         }
@@ -67,6 +68,16 @@ namespace ShopListPr1
         }
 
         private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
