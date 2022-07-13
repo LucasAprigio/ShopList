@@ -164,11 +164,8 @@ namespace ShopListPr1
 
         private void txtQuantidade_TextChanged_1(object sender, EventArgs e)
         {
-            double total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
+           double total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
             txtTotal.Text = total.ToString();
-
-
-
 
         }
     }

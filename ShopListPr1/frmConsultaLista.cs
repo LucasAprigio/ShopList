@@ -108,6 +108,7 @@ namespace ShopListPr1
             lista.email = Properties.Settings.Default.email;
             frmCadastroProduto cadastroProduto = new frmCadastroProduto(produtoSelecionado());
             cadastroProduto.ShowDialog();
+
             dgvLista.BeginInvoke((MethodInvoker)delegate ()
             {
                 txtFiltro.Clear();
