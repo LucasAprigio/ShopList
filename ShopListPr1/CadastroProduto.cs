@@ -160,14 +160,14 @@ namespace ShopListPr1
             }
         }
 
-      
-
-        private void txtQuantidade_TextChanged_1(object sender, EventArgs e)
+        private void txtPreco_TextChanged(object sender, EventArgs e)
         {
-           double total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
-           txtTotal.Text = total.ToString();
-
+            double total;
+            total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
+            txtTotal.Text = total.ToString();
         }
+
+      
     }
     
 }

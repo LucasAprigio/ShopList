@@ -81,7 +81,7 @@ namespace ShopListPr1
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(94, 30);
             this.txtQuantidade.TabIndex = 12;
-            this.txtQuantidade.TextChanged += new System.EventHandler(this.txtQuantidade_TextChanged_1);
+           
             // 
             // txtPreco
             // 

@@ -63,9 +63,9 @@ namespace ShopListPr1
             list.idproduto = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[0].Value);
             list.email = dgvLista.SelectedRows[0].Cells[1].Value.ToString();
             list.produto = dgvLista.SelectedRows[0].Cells[2].Value.ToString();
-            list.preco = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[3].Value.ToString());
-            list.quantidade = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[4].Value.ToString());
-            list.total = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[5].Value.ToString());
+            list.preco = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[3].Value);
+            list.quantidade = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[4].Value);
+            list.total = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[5].Value);
             
             return list;
 
