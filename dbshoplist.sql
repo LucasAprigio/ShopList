@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12-Jul-2022 às 07:33
+-- Tempo de geração: 13-Jul-2022 às 03:17
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -33,9 +33,9 @@ CREATE TABLE `lista` (
   `idproduto` int(11) NOT NULL,
   `email` varchar(45) DEFAULT NULL,
   `produto` varchar(45) DEFAULT NULL,
-  `preco` varchar(45) DEFAULT NULL,
-  `quantidade` varchar(45) DEFAULT NULL,
-  `total` varchar(45) DEFAULT NULL
+  `preco` double DEFAULT NULL,
+  `quantidade` int(11) DEFAULT NULL,
+  `total` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -43,11 +43,12 @@ CREATE TABLE `lista` (
 --
 
 INSERT INTO `lista` (`idproduto`, `email`, `produto`, `preco`, `quantidade`, `total`) VALUES
-(1, 'admin@admin.com', 'pão francês', '3', '15', '45'),
-(2, 'admin@admin.com', 'leite', '3', '10', '30'),
-(3, 'admin@admin.com', 'nescau', '9', '1', '9'),
-(4, 'admin@admin.com', 'arroz', '13', '4', '52'),
-(5, 'admin@admin.com', 'feijão', '6', '13', '78');
+(1, 'admin@admin.com', 'pão suiço', 3, 15, 45),
+(2, 'admin@admin.com', 'leite', 3, 10, 30),
+(4, 'admin@admin.com', 'arroz', 13, 4, 52),
+(5, 'admin@admin.com', 'feijão', 6, 13, 78),
+(7, 'lc@lc.com', 'Nescau', 9, 4, 45),
+(18, 'lc@lc.com', 'leite', 5, 9, 45);
 
 -- --------------------------------------------------------
 
@@ -70,7 +71,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idusuario`, `nome`, `email`, `senha`, `datadenascimento`, `cpf`, `telefone`) VALUES
-(1, 'admin', 'admin@admin.com', '123', NULL, NULL, NULL);
+(1, 'admin', 'admin@admin.com', '123', NULL, NULL, NULL),
+(2, 'Lucas', 'lc@lc.com', '123', '03/04/2003', '123,135,213-21', '(21) 99968-0746');
 
 --
 -- Índices para tabelas despejadas
@@ -96,13 +98,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `lista`
 --
 ALTER TABLE `lista`
-  MODIFY `idproduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idproduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
