@@ -39,9 +39,9 @@ namespace ShopListPr1
 
            
             txtProduto.Text = lista.produto;
-            Convert.ToInt32(txtQuantidade.Text = lista.quantidade.ToString());
-            Convert.ToDouble(txtPreco.Text = lista.preco.ToString());
-            Convert.ToDouble(txtTotal.Text = lista.total.ToString());
+            txtQuantidade.Text = lista.quantidade.ToString();
+            txtPreco.Text = lista.preco.ToString();
+            txtTotal.Text = lista.total.ToString();
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -164,8 +164,8 @@ namespace ShopListPr1
 
         private void txtQuantidade_TextChanged_1(object sender, EventArgs e)
         {
-           double total = Convert.ToDouble(txtPreco.Text.ToString()) * Convert.ToInt32(txtQuantidade.Text.ToString());
-            txtTotal.Text = total.ToString();
+           double total = Convert.ToDouble(txtPreco.Text) * Convert.ToDouble(txtQuantidade.Text);
+           txtTotal.Text = total.ToString();
 
         }
     }
