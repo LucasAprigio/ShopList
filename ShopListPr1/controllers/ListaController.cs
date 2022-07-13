@@ -98,15 +98,15 @@ namespace ShopListPr1.Controllers
             {
                 conexao.Open();
                 MySqlCommand cmd = new MySqlCommand("UPDATE lista SET " +
-                                                    "produto=@produto," +
-                                                    "preco=@preco," +
-                                                    "quantidade=@quantidade," +
-                                                    "total=@total " +
+                                                    "produto=@produto,"+
+                                                    "preco=@preco,"+
+                                                    "quantidade=@quantidade,"+                                                   
+                                                    "total=@total " +                                                  
                                                     "WHERE idproduto=@idproduto", conexao);
                 cmd.Parameters.AddWithValue("idproduto", list.idproduto);
                 cmd.Parameters.AddWithValue("@produto", list.produto);
-                cmd.Parameters.AddWithValue("@quantidade", list.quantidade);
                 cmd.Parameters.AddWithValue("@preco", list.preco);
+                cmd.Parameters.AddWithValue("@quantidade", list.quantidade);            
                 cmd.Parameters.AddWithValue("@total", list.total);
 
                 cmd.ExecuteNonQuery();

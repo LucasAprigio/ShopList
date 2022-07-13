@@ -87,10 +87,10 @@ namespace ShopListPr1
             
 
             dgvLista.Columns[0].HeaderText = "ID";
-            dgvLista.Columns[1].HeaderText = "email";
-            dgvLista.Columns[2].HeaderText = "produto";
-            dgvLista.Columns[3].HeaderText = "Quantidade";
-            dgvLista.Columns[4].HeaderText = "preço";
+            dgvLista.Columns[1].HeaderText = "Email";
+            dgvLista.Columns[2].HeaderText = "Produto";
+            dgvLista.Columns[3].HeaderText = "Preço";
+            dgvLista.Columns[4].HeaderText = "Quantidade";
             dgvLista.Columns[5].HeaderText = "Total";
             
 

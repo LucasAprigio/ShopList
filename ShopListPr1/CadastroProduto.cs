@@ -20,7 +20,7 @@ namespace ShopListPr1
         public frmCadastroProduto()
         {
             InitializeComponent();
-            txtEmail.Text = Properties.Settings.Default.email;
+           
         }
 
         public frmCadastroProduto(Lista list)
@@ -37,7 +37,7 @@ namespace ShopListPr1
             btnLimpar.Visible = false;
             btnSalvar.Visible = true;
 
-            txtEmail.Text = lista.email;
+           
             txtProduto.Text = lista.produto;
             Convert.ToInt32(txtQuantidade.Text = lista.quantidade.ToString());
             Convert.ToDouble(txtPreco.Text = lista.preco.ToString());
@@ -57,17 +57,13 @@ namespace ShopListPr1
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            double total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
-
             Lista lista = new Lista(
-                    Properties.Settings.Default.email,
-                    txtProduto.Text,
-                    Convert.ToDouble(txtPreco.Text.ToString()),
-                    Convert.ToInt32(txtQuantidade.Text.ToString()),
-                    Convert.ToDouble(total.ToString()));
-
-
-            txtTotal.Text = total.ToString();
+                     Properties.Settings.Default.email,
+                     txtProduto.Text,
+                     Convert.ToDouble(txtPreco.Text),
+                     Convert.ToInt32(txtQuantidade.Text),
+                     Convert.ToDouble(txtTotal.Text)
+                 );
 
             ListaController listaController = new ListaController();
             bool verifica = listaController.salvarLista(lista);
@@ -140,14 +136,11 @@ namespace ShopListPr1
             return true;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            lista.email = txtEmail.Text;
+            
             lista.produto = txtProduto.Text;
             lista.quantidade = Convert.ToInt32(txtQuantidade.Text.ToString());
             lista.preco = Convert.ToDouble(txtPreco.Text.ToString());
@@ -165,6 +158,18 @@ namespace ShopListPr1
             {
                 MessageBox.Show("Falha ao atualizar o Produto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+      
+
+        private void txtQuantidade_TextChanged_1(object sender, EventArgs e)
+        {
+            double total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
+            txtTotal.Text = total.ToString();
+
+
+
+
         }
     }
     

@@ -449,7 +449,7 @@
         </TablixRowHierarchy>
         <DataSetName>Lista</DataSetName>
         <Height>1.2cm</Height>
-        <Width>16.32292cm</Width>
+        <Width>16.32291cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -463,11 +463,15 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Total dos Produtos: </Value>
+                <Value>Total da Lista: </Value>
                 <Style />
               </TextRun>
               <TextRun>
-                <Value>=Sum(Fields!idproduto.Value, "Lista")</Value>
+                <Value>=Sum(Fields!total.Value, "Lista")</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>R$</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -633,7 +637,7 @@
         </Field>
         <Field Name="preco">
           <DataField>preco</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="produto">
           <DataField>produto</DataField>
@@ -641,11 +645,11 @@
         </Field>
         <Field Name="quantidade">
           <DataField>quantidade</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="total">
           <DataField>total</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
