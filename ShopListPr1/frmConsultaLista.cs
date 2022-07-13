@@ -58,6 +58,8 @@ namespace ShopListPr1
         private Lista produtoSelecionado()
         {
             Lista list = new Lista();
+
+
             list.idproduto = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[0].Value);
             list.email = dgvLista.SelectedRows[0].Cells[1].Value.ToString();
             list.produto = dgvLista.SelectedRows[0].Cells[2].Value.ToString();

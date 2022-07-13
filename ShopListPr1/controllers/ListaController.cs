@@ -92,7 +92,7 @@ namespace ShopListPr1.Controllers
                 conexao.Close();
             }
         }
-        public bool editarProduto(Lista list)
+        public bool editarProduto(Lista lista)
         {
             try
             {
@@ -103,13 +103,13 @@ namespace ShopListPr1.Controllers
                                                     "quantidade=@quantidade,"+                                                   
                                                     "total=@total " +                                                  
                                                     "WHERE idproduto=@idproduto", conexao);
-                cmd.Parameters.AddWithValue("idproduto", list.idproduto);
-                cmd.Parameters.AddWithValue("@produto", list.produto);
-                cmd.Parameters.AddWithValue("@preco", list.preco);
-                cmd.Parameters.AddWithValue("@quantidade", list.quantidade);            
-                cmd.Parameters.AddWithValue("@total", list.total);
-
+                cmd.Parameters.AddWithValue("idproduto", lista.idproduto);
+                cmd.Parameters.AddWithValue("@produto", lista.produto);
+                cmd.Parameters.AddWithValue("@preco", lista.preco);
+                cmd.Parameters.AddWithValue("@quantidade", lista.quantidade);            
+                cmd.Parameters.AddWithValue("@total", lista.total);
                 cmd.ExecuteNonQuery();
+
                 return true;
 
             }

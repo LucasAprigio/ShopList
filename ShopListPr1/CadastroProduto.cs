@@ -142,9 +142,9 @@ namespace ShopListPr1
         {
             
             lista.produto = txtProduto.Text;
-            lista.quantidade = Convert.ToInt32(txtQuantidade.Text.ToString());
-            lista.preco = Convert.ToDouble(txtPreco.Text.ToString());
-            lista.total = Convert.ToDouble(txtTotal.Text.ToString());
+            lista.quantidade = Convert.ToInt32(txtQuantidade.Text);
+            lista.preco = Convert.ToDouble(txtPreco.Text);
+            lista.total = Convert.ToDouble(txtTotal.Text);
 
 
             ListaController listaController = new ListaController();
@@ -164,7 +164,7 @@ namespace ShopListPr1
 
         private void txtQuantidade_TextChanged_1(object sender, EventArgs e)
         {
-           double total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
+           double total = Convert.ToDouble(txtPreco.Text.ToString()) * Convert.ToInt32(txtQuantidade.Text.ToString());
             txtTotal.Text = total.ToString();
 
         }
