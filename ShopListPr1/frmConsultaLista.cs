@@ -65,8 +65,7 @@ namespace ShopListPr1
             list.produto = dgvLista.SelectedRows[0].Cells[2].Value.ToString();
             list.preco = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[3].Value);
             list.quantidade = Convert.ToInt32(dgvLista.SelectedRows[0].Cells[4].Value);
-            list.total = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[5].Value);
-            
+            list.total = Convert.ToDouble(dgvLista.SelectedRows[0].Cells[5].Value);        
             return list;
 
         }
@@ -117,6 +116,12 @@ namespace ShopListPr1
                 dgvLista.DataSource = listaController.exibirProdutos(lista);
                 dgvLista.Refresh();
             });
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            frmRelatorioLista relatorioLista = new frmRelatorioLista();
+            relatorioLista.ShowDialog();
         }
     }
 }

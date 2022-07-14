@@ -32,15 +32,13 @@ namespace ShopListPr1
 
         private void cadastroDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCadastroUsuario CadastroUsuario = new frmCadastroUsuario();
-            CadastroUsuario.ShowDialog();
+            
            
         }
 
         private void listaDeComprasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCadastroProduto cadastroProduto = new frmCadastroProduto();
-            cadastroProduto.ShowDialog();
+            
             
         }
 
@@ -92,6 +90,18 @@ namespace ShopListPr1
         {
             frmConsultaLista consultaLista = new frmConsultaLista();
             consultaLista.ShowDialog();
+        }
+
+        private void uSUÁRIOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroUsuario CadastroUsuario = new frmCadastroUsuario();
+            CadastroUsuario.ShowDialog();
+        }
+
+        private void lISTAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroProduto cadastroProduto = new frmCadastroProduto();
+            cadastroProduto.ShowDialog();
         }
     }
 }
