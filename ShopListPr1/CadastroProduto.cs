@@ -45,7 +45,16 @@ namespace ShopListPr1
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            if (txtPreco.Text != "" && txtQuantidade.Text != "")
+            {
+                double total;
+                total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
+                txtTotal.Text = total.ToString();
+            }
+            else
+            {
+                txtTotal.Text = "";
+            }
         }
         
         private void frmCadastroProduto_Load(object sender, EventArgs e)
@@ -160,14 +169,31 @@ namespace ShopListPr1
             }
         }
 
-        private void txtPreco_TextChanged(object sender, EventArgs e)
+        private void txtQuantidade_TextChanged(object sender, EventArgs e)
         {
-            double total;
-            total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
-            txtTotal.Text = total.ToString();
+            if (txtPreco.Text != "" && txtQuantidade.Text != "")
+            {
+                double total;
+                total = Convert.ToDouble(txtPreco.Text) * Convert.ToInt32(txtQuantidade.Text);
+                txtTotal.Text = total.ToString();
+            }
+            else
+            {
+                txtTotal.Text = "";
+            }
         }
 
-      
+        private void txtTotal_TextChanged(object sender, EventArgs e)
+        {
+            if(txtTotal.Text != "" && txtProduto.Text != "")
+            {
+                btnCadastrar.Enabled = true;
+            }
+            else
+            {
+                btnCadastrar.Enabled = false;
+            }
+        }
     }
     
 }

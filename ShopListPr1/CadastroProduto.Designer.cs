@@ -74,6 +74,7 @@ namespace ShopListPr1
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(139, 30);
             this.txtTotal.TabIndex = 13;
+            this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // txtQuantidade
             // 
@@ -81,7 +82,7 @@ namespace ShopListPr1
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(94, 30);
             this.txtQuantidade.TabIndex = 12;
-           
+            this.txtQuantidade.TextChanged += new System.EventHandler(this.txtQuantidade_TextChanged);
             // 
             // txtPreco
             // 
@@ -155,6 +156,7 @@ namespace ShopListPr1
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Lime;
+            this.btnCadastrar.Enabled = false;
             this.btnCadastrar.FlatAppearance.BorderSize = 0;
             this.btnCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
