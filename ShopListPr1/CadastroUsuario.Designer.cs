@@ -30,18 +30,18 @@ namespace ShopListPr1
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.MaskedTextBox();
             this.txtNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -74,6 +74,15 @@ namespace ShopListPr1
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Location = new System.Drawing.Point(224, 148);
+            this.txtTelefone.Mask = "(00) 00000-0000";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(142, 30);
+            this.txtTelefone.TabIndex = 7;
+            this.txtTelefone.ValidatingType = typeof(System.DateTime);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -82,6 +91,22 @@ namespace ShopListPr1
             this.label6.Size = new System.Drawing.Size(63, 23);
             this.label6.TabIndex = 10;
             this.label6.Text = "Senha";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(220, 123);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 23);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Telefone";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(423, 52);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(237, 30);
+            this.txtEmail.TabIndex = 5;
             // 
             // txtCpf
             // 
@@ -99,6 +124,15 @@ namespace ShopListPr1
             this.txtNascimento.Size = new System.Drawing.Size(110, 30);
             this.txtNascimento.TabIndex = 7;
             this.txtNascimento.ValidatingType = typeof(System.DateTime);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(419, 26);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(55, 23);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Email";
             // 
             // txtSenha
             // 
@@ -142,40 +176,6 @@ namespace ShopListPr1
             this.label1.Size = new System.Drawing.Size(59, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Location = new System.Drawing.Point(224, 148);
-            this.txtTelefone.Mask = "(00) 00000-0000";
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(142, 30);
-            this.txtTelefone.TabIndex = 7;
-            this.txtTelefone.ValidatingType = typeof(System.DateTime);
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(423, 52);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(237, 30);
-            this.txtEmail.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(220, 123);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 23);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Telefone";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(419, 26);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 23);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Email";
             // 
             // btnCadastrar
             // 
@@ -264,7 +264,7 @@ namespace ShopListPr1
             this.MinimizeBox = false;
             this.Name = "frmCadastroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CadastroUsuario";
+            this.Text = "SHOP LIST | Cadastro Usuario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

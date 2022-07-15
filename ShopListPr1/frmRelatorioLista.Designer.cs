@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmRelatorioLista";
-            this.Text = " Relatorio Lista";
+            this.Text = " SHOP LIST | Relatorio Lista";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmRelatorioLista_Load);
             this.ResumeLayout(false);

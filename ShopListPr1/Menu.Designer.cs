@@ -32,6 +32,8 @@ namespace ShopListPr1
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uSUÁRIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lISTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaListaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatorioListaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -44,8 +46,6 @@ namespace ShopListPr1
             this.usuarioLogado = new System.Windows.Forms.ToolStripStatusLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uSUÁRIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lISTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,40 +82,54 @@ namespace ShopListPr1
             this.uSUÁRIOToolStripMenuItem,
             this.lISTAToolStripMenuItem});
             this.cadastroDeUsuáriosToolStripMenuItem.Name = "cadastroDeUsuáriosToolStripMenuItem";
-            this.cadastroDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastroDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.cadastroDeUsuáriosToolStripMenuItem.Text = "Cadastro";
             this.cadastroDeUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeUsuáriosToolStripMenuItem_Click);
+            // 
+            // uSUÁRIOToolStripMenuItem
+            // 
+            this.uSUÁRIOToolStripMenuItem.Name = "uSUÁRIOToolStripMenuItem";
+            this.uSUÁRIOToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.uSUÁRIOToolStripMenuItem.Text = "Usuário";
+            this.uSUÁRIOToolStripMenuItem.Click += new System.EventHandler(this.uSUÁRIOToolStripMenuItem_Click);
+            // 
+            // lISTAToolStripMenuItem
+            // 
+            this.lISTAToolStripMenuItem.Name = "lISTAToolStripMenuItem";
+            this.lISTAToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.lISTAToolStripMenuItem.Text = "Produto";
+            this.lISTAToolStripMenuItem.Click += new System.EventHandler(this.lISTAToolStripMenuItem_Click);
             // 
             // consultaListaToolStripMenuItem
             // 
             this.consultaListaToolStripMenuItem.Name = "consultaListaToolStripMenuItem";
-            this.consultaListaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.consultaListaToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.consultaListaToolStripMenuItem.Text = "Consulta Lista";
             this.consultaListaToolStripMenuItem.Click += new System.EventHandler(this.consultaListaToolStripMenuItem_Click);
             // 
             // relatorioListaToolStripMenuItem
             // 
             this.relatorioListaToolStripMenuItem.Name = "relatorioListaToolStripMenuItem";
-            this.relatorioListaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.relatorioListaToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.relatorioListaToolStripMenuItem.Text = "Relatorio Lista";
             this.relatorioListaToolStripMenuItem.Click += new System.EventHandler(this.relatorioListaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(182, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(145, 6);
             // 
             // logOffToolStripMenuItem
             // 
             this.logOffToolStripMenuItem.Name = "logOffToolStripMenuItem";
-            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.logOffToolStripMenuItem.Text = "Log Off";
             this.logOffToolStripMenuItem.Click += new System.EventHandler(this.logOffToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -189,20 +203,6 @@ namespace ShopListPr1
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // uSUÁRIOToolStripMenuItem
-            // 
-            this.uSUÁRIOToolStripMenuItem.Name = "uSUÁRIOToolStripMenuItem";
-            this.uSUÁRIOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.uSUÁRIOToolStripMenuItem.Text = "Usuário";
-            this.uSUÁRIOToolStripMenuItem.Click += new System.EventHandler(this.uSUÁRIOToolStripMenuItem_Click);
-            // 
-            // lISTAToolStripMenuItem
-            // 
-            this.lISTAToolStripMenuItem.Name = "lISTAToolStripMenuItem";
-            this.lISTAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.lISTAToolStripMenuItem.Text = "Produto";
-            this.lISTAToolStripMenuItem.Click += new System.EventHandler(this.lISTAToolStripMenuItem_Click);
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,7 +219,7 @@ namespace ShopListPr1
             this.MinimizeBox = false;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu";
+            this.Text = "SHOP LIST | Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMenu_FormClosing);
             this.Load += new System.EventHandler(this.Menu_Load);
             this.menuStrip1.ResumeLayout(false);

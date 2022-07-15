@@ -241,7 +241,7 @@ namespace ShopListPr1
             this.MinimizeBox = false;
             this.Name = "frmCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Produtos";
+            this.Text = "SHOP LIST | Cadastro de Produtos";
             this.Load += new System.EventHandler(this.frmCadastroProduto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

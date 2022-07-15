@@ -202,7 +202,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "frmConsultaLista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consulta Lista";
+            this.Text = "SHOP LIST | Consulta Lista";
             this.Load += new System.EventHandler(this.frmConsultaLista_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
